@@ -1,0 +1,33 @@
+body{
+    background:#accdff;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:#02079c;
+}
+.formulario{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.listaTodosGastos li{
+    display: flex;
+    gap: 10 px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-borrar {
+  background-color: #ff2aa3;
+  color: #ffd3f5; ,
+  display: flex;
+  justify-content: flex-end;
+
+ }
+
+
+ 
+
+

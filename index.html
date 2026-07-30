@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Gastos del mes</h1>
+    <div class="formulario">
+        <div >
+        <input type="text" name="descripcionGastos" id="descripcionGastos"> 
+        </div>
+          <div >
+          <input type="text" name="montoGast" id="montoGast">
+          </div >
+              <div> 
+               <select name="tipoGasto" id="tipoGasto">
+                <option value="Comida">Comida</option>
+                <option value="Trasporte">Trasporte</option>
+                <option value="Entretenimiento">Entretenimiento</option>
+                <option value="Servicio">Servicios</option>
+                <option value="Otro">Otros</option>
+               </select>
+
+              </div>
+                <div>
+                    <button type="button" id="agragarGasto">
+                    Agregar Gasto
+                    </button>
+
+                 </div>
+    </div>
+    <div class="titleTodosGastos">Todos los Gastos</div>
+    <div id="todos">
+        <ul class="listaTodosGastos" id="listaTodosGastos">
+
+        </ul>
+
+    </div>
+
+    <div class="gastosDeHoy" id="gastosDeHoy">
+        
+    
+
+    </div>
+
+     <div class="gastosDeLMes" id="gastosDeLMes">
+    
+
+    </div>
+    <div class="gastosCategoria">
+            <ul id="listaGastosCategoria">
+
+            </ul>
+    </div>
+    <div class="gastosTotal">
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
