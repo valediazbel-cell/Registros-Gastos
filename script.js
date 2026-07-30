@@ -89,7 +89,8 @@ function pintarGastos(){
         turnoLista.appendChild( botonBorrar );
 
         let objetoFecha = new Date(gastos[kListaGastos].dia);
-        dia.textContent = objetoFecha;
+        dia.textContent = objetoFecha.toLocaleDateString("es-CO");
+        // dia.textContent = objetoFecha;
 
         turnoLista.appendChild( dia);
 

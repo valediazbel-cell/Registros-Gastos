@@ -1,5 +1,5 @@
 body{
-    background:#accdff;
+    background:#ebecee;
     padding:40px;
 }
 
@@ -7,26 +7,33 @@ h1{
     text-align:center;
     color:#02079c;
 }
+.titleTodosGastos {
+      font-size: 20px;
+      color: rgb(98, 13, 126);
+}
 .formulario{
      display: flex;
     flex-direction: column;
     align-items: center;
 }
-ul.listaTodosGastos li{
-    display: flex;
+#listaTodosGastos li{
+    display: grid;
     gap: 10 px;
-    flex-direction: column;
-    align-items: center;
+   grid-template-columns : repeat( 5, 1fr)
 }
 
 .boton-borrar {
   background-color: #ff2aa3;
-  color: #ffd3f5; ,
+  color: #ffd3f5; 
   display: flex;
   justify-content: flex-end;
 
  }
-
+#listaGastosCategoria li{
+    display: grid;
+    gap: 10 px;
+   grid-template-columns : repeat( 5, 1fr)
+}
 
  
 
