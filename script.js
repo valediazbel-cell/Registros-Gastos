@@ -1,6 +1,6 @@
 let gastos =[];
 
-let botonAgrgar = document.getElementById("agragarGasto");
+let botonAgrgar = document.getElementById("agregarGasto");
 let listaTodosGastos = document.getElementById("listaTodosGastos");
 let gastosDeHoy = document.getElementById("gastosDeHoy");
 let gastosDelMes = document.getElementById("gastosDeLMes");
@@ -31,7 +31,7 @@ function recuperargastos (){
 
 
 
-function agragarGasto() {
+function agregarGasto() {
 
 
     let campoDescripcion = document.getElementById("descripcionGastos");
@@ -166,7 +166,7 @@ categorias.forEach((categoria,indece) => {
 
 botonAgrgar.addEventListener( "click", function(e){
 
-    agragarGasto();
+    agregarGasto();
 
 } );
 
