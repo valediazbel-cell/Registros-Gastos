@@ -1,3 +1,6 @@
+
+/*
+
 body{
     background:#ebecee;
     padding:40px;
@@ -35,6 +38,226 @@ h1{
    grid-template-columns : repeat( 5, 1fr)
 }
 
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3E6D8F;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    color: #333;
+
+}
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+    text-align: center;
+    color: #EAEBE4;
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario div {
+    width: 100%;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Cuando haces clic en el input */
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #302b63;
+}
+
+/* BOTÓN */
+
+#agregarGasto {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #302b63;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#agregarGasto:hover {
+    background-color: #4b438d;
+}
+
+/* TÍTULOS DE SECCIONES */
+
+.titleTodosGastos,
+.gastosDeHoy,
+.gastosDeLMes,
+.gastosCategoria,
+.gastosTotal {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.titleTodosGastos {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #EAEBE4;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* LISTA DE TODOS LOS GASTOS */
+
+#todos {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.listaTodosGastos {
+    list-style: none;
+}
+
+/* CADA GASTO */
+
+#listaTodosGastos li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr auto;
+    gap: 10px;
+    align-items: center;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    background-color: #f7f7fa;
+    border-radius: 8px;
+}
+
+/* BOTÓN BORRAR */
+
+.boton-borrar {
+    background-color: #CB8D82;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-borrar:hover {
+    background-color: #e78675;
+}
+
+/* GASTOS DE HOY Y DEL MES */
+
+.gastosDeHoy,
+.gastosDeLMes,
+.gastosCategoria {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+h2,
+h3 {
+    color: #383E5E;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+/* CATEGORÍAS */
+
+#listaGastosCategoria {
+    list-style: none;
+}
+
+#listaGastosCategoria li {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+
+    padding: 10px;
+    margin-bottom: 8px;
+
+    background-color: #f7f7fa;
+    border-radius: 8px;
+}
+
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .formulario,
+    #todos,
+    .titleTodosGastos,
+    .gastosDeHoy,
+    .gastosDeLMes,
+    .gastosCategoria,
+    .gastosTotal {
+        width: 100%;
+    }
+
+    #listaTodosGastos li {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    #listaGastosCategoria li {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-borrar {
+        width: 100%;
+    }
+}
  
-
-

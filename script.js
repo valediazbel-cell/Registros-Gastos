@@ -130,7 +130,7 @@ function pintarGastos(){
 
 }
 
-let categorias = ["Comida","Trasporte","Entretenimiento","Servicios","Otros"]
+let categorias = ["Comida","Trasporte","Entretenimiento","Servicios","Otro"]
 
 categorias.forEach((categoria,indece) => {
 
